@@ -493,7 +493,7 @@
 
           const iframeURL = jsURL.replace('embed-v2.js', 'iframe.html');
           const setIframeCode = () => {
-            document.querySelector("#embededIframeCode").value = `<iframe frameborder="0" scrolling="no" style="width:100%; height:${previewArea.offsetHeight + 16}px;" allow="clipboard-write" src=\"${iframeURL}\"><\/iframe>`;;
+            document.querySelector("#embededIframeCode").value = `<iframe frameborder="0" scrolling="no" className="w-full h-[${previewArea.offsetHeight + 16}px]" allow="clipboard-write" src=\"${iframeURL}\"><\/iframe>`;
           };
           if (heightObserver !== undefined) {
             heightObserver.disconnect();
